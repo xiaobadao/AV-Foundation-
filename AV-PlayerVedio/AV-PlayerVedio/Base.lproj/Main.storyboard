@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bs-yB-qvP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="211"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R3-VW-EOC">
+                                        <rect key="frame" x="128" y="161" width="119" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eYU-ew-rV4"/>
+                                        </constraints>
+                                        <state key="normal" title="play"/>
+                                        <connections>
+                                            <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YR-BB-RGz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSj-qk-4AL">
+                                        <rect key="frame" x="313" y="161" width="42" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1UX-lz-0LB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muz-dB-3ad">
+                                        <rect key="frame" x="20" y="161" width="45" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="mms-QB-ogv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="6Bs-yB-qvP" secondAttribute="width" multiplier="9:16" id="08E-eX-mzu"/>
+                                    <constraint firstAttribute="bottom" secondItem="3R3-VW-EOC" secondAttribute="bottom" constant="20" id="1Qh-mS-5ao"/>
+                                    <constraint firstItem="Muz-dB-3ad" firstAttribute="leading" secondItem="6Bs-yB-qvP" secondAttribute="leading" constant="20" id="2du-OQ-Bki"/>
+                                    <constraint firstAttribute="bottom" secondItem="Muz-dB-3ad" secondAttribute="bottom" constant="20" id="5hG-7n-T1p"/>
+                                    <constraint firstItem="rSj-qk-4AL" firstAttribute="leading" secondItem="3R3-VW-EOC" secondAttribute="trailing" constant="66" id="Aga-ab-9P6"/>
+                                    <constraint firstAttribute="trailing" secondItem="rSj-qk-4AL" secondAttribute="trailing" constant="20" id="Ir5-JO-DV5"/>
+                                    <constraint firstItem="3R3-VW-EOC" firstAttribute="leading" secondItem="Muz-dB-3ad" secondAttribute="trailing" constant="63" id="JDp-sJ-jDw"/>
+                                    <constraint firstItem="rSj-qk-4AL" firstAttribute="leading" secondItem="3R3-VW-EOC" secondAttribute="trailing" constant="66" id="NPw-iz-6b5"/>
+                                    <constraint firstItem="3R3-VW-EOC" firstAttribute="leading" secondItem="Muz-dB-3ad" secondAttribute="trailing" constant="63" id="q90-aJ-LY9"/>
+                                    <constraint firstItem="3R3-VW-EOC" firstAttribute="centerX" secondItem="6Bs-yB-qvP" secondAttribute="centerX" id="qQU-8m-JN7"/>
+                                    <constraint firstAttribute="bottom" secondItem="rSj-qk-4AL" secondAttribute="bottom" constant="20" id="uxP-f4-VNy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Bs-yB-qvP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="B2c-Ny-rJg"/>
+                            <constraint firstAttribute="trailing" secondItem="6Bs-yB-qvP" secondAttribute="trailing" id="opI-i9-97r"/>
+                            <constraint firstItem="6Bs-yB-qvP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uYW-3N-3RM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="durationTime" destination="rSj-qk-4AL" id="2FW-Il-AlG"/>
+                        <outlet property="playBtn" destination="3R3-VW-EOC" id="xx7-6p-sfK"/>
+                        <outlet property="playerView" destination="6Bs-yB-qvP" id="kOc-XQ-pJO"/>
+                        <outlet property="totalTime" destination="Muz-dB-3ad" id="PNq-mF-tcz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.60000000000002" y="-0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>

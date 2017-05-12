@@ -17,10 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self pipVedioPlayer];
 }
 - (IBAction)playerBtn:(UIButton *)sender {
-    [self pipVedioPlayer];
+    
 }
 
 - (void)pipVedioPlayer {
